@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block navigation %}
+    {% include "nav.html" %}
+{% endblock navigation %}
+
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label>Name</label>
+    <input type="text" name="name">
+    <label>Surname</label>
+    <input type="text" name="surname">
+    <label>Phone</label>
+    <input type="text" name="phone">
+    <label>Email</label>
+    <input type="text" name="email">
+    <input type="submit" value="Update">
+</form>
+{% endblock content %}

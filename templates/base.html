@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            text-align: center;
+            background: #ccc;
+        }
+        .navigation {
+            float: left;
+            width: 200px;
+        }
+        .content {
+            margin-left: 200px;
+        }
+        .footer {
+            clear: left;
+            text-align: center;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Sales
+    </div>
+    <div class="navigation">
+        {% block navigation %}
+        {% endblock navigation %}
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <div class="footer">
+        &copy; Python gruop P27
+    </div>
+</body>
+</html>
